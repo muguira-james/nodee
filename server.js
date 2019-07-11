@@ -24,13 +24,7 @@ con.connect(function(err){
   console.log('Connection established');
 
 });
-// con.end(function(err) {
-//   // The connection is terminated gracefully
-//   // Ensures all previously enqueued queries are still
-//   // before sending a COM_QUIT packet to the MySQL server.
-//   if(err) console.log('err: ', err);
-//   else console.log('Terminated done: ');
-// });
+
 
 // App
 const app = express();
@@ -70,5 +64,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, HOST);
-console.log("some useless message")
+console.log("some useless message: and more")
 console.log(`Running on http://${HOST}:${PORT}`);
